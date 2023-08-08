@@ -6,3 +6,30 @@ title: "eds_212_day2_task"
 library(tidyverse)
 library(palmerpenguins)
 ```
+
+## Section 3
+
+1.  Find the slope of f(x) = x\^2 at x = 3
+
+    ```{r}
+    fx = expression(x^2)
+    df_dx <- D(fx,'x')
+    df_dx
+
+    x = 3
+    eval(df_dx)
+
+    ```
+
+2.  Find the slope of P(a) = ...
+
+    ```{r}
+    pa = expression(2*(3*a + 2)^4 - 5)
+
+    df_da <- D(pa,'a')
+
+    df_da
+
+    a = 1.2
+    eval(df_da)
+    ```
