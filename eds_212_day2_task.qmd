@@ -33,3 +33,13 @@ library(palmerpenguins)
     a = 1.2
     eval(df_da)
     ```
+
+    ## Section 4 Penguins
+```{r}
+ggplot(data = penguins, aes(x = penguins$bill_length_mm, y = penguins$bill_depth_mm, color = species)) + geom_point() + labs(title = "Penguin bill length vs Bill depth", x = "Penguin Bill length (mm)", y = "Penguins Bill depth (mm)")
+```
+Jitter plot of flipper length by species
+```{r}
+ggplot(data = penguins, aes(x = penguins$flipper_length_mm, y = penguins$species, color = species)) + geom_jitter() + labs(title = "Flipper length by species", x = "Fliper Length (mm)", y = "Species")
+```
+
